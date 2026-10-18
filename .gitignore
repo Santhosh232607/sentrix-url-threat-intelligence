@@ -1,0 +1,35 @@
+# =============================================================================
+# SENTRIX — Git Ignore Rules
+# =============================================================================
+
+# Streamlit secrets (CRITICAL: Never commit API keys or credentials)
+.streamlit/secrets.toml
+secrets.toml
+*.secrets.toml
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python bytecode & caching
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Persistent SQLite Databases
+data/scan_history.db
+*.db
+*.sqlite3
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment variables
+.env
+.env.*
